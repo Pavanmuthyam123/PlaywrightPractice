@@ -11,9 +11,9 @@ class LoginPage:
     def __init__(self, page: Page, base_url: str):
         self.page = page
         self.base_url = base_url
-        self.username = self.page.locator("input#username")
-        self.password = self.page.locator("input#password")
-        self.login_button = self.page.locator("button[type=\"submit\"]")
+        self.username = self.page.get_by_role("textbox", name="Username")
+        self.password = self.page.get_by_role("textbox", name="Password")
+        self.login_button = self.page.get_by_role("button", name="Login")
 
     def navigate(self) -> None:
         self.page.goto(f"{self.base_url}/login")
