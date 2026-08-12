@@ -1,4 +1,6 @@
 {
-  "valid": {"username": "tomsmith", "password": "SuperSecretPassword!"},
-  "invalid": {"username": "invalid", "password": "invalid"}
+    "valid_user": {
+        "username": "tomsmith",
+        "password": "SuperSecretPassword!"
+    }
 }
